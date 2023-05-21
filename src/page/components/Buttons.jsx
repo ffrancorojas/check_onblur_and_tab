@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useSearch } from "../utils"
+import { useSearch } from "../../utils"
 
 export default function Buttons() {
     const { simulatorCallApi } = useSearch()

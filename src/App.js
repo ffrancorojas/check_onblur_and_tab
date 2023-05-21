@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Buttons } from './components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='app-container'>
+      <header className='header'>
+        Cómo parar una llamada recursiva a una api
       </header>
+      <div className='introduction-container'>La duda surge en la siguiente situación: Realizamos una llamada a una api para ver el estado de una búsqueda. Si aún no ha finalizado a los X segundos se tiene que volver a realizar la misma consulta pero si ya finalizó hay que pararla. aparte, si cambia de pestaña o de url, queremos parar esa llamada recursiva que por si misma no finalizaría.
+      </div>
+      <Buttons />
     </div>
   );
 }
